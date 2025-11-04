@@ -5,6 +5,7 @@ RUN apk add --no-cache gettext
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf.template /etc/nginx/templates/default.conf.template
 COPY index.html /usr/share/nginx/html/index.html
+COPY style.css /usr/share/nginx/html/style.css
 
 EXPOSE 80
 
